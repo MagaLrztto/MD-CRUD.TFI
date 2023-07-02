@@ -37,30 +37,7 @@ createApp({
         .catch(err => {
             console.error(err)
         })
-    },
-    grabar(){
-        let producto = {
-            nombre:this.nombre,
-            precio: this.precio,
-            stock: this.stock,
-            imagen:this.imagen
-        }
-        var options = {
-            body:JSON.stringify(producto),
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            redirect: 'follow'
-        }
-        fetch(this.url, options)
-            .then(function () {
-                alert("Registro grabado")
-                window.location.href = "./productos.html";
-            })
-            .catch(err => {
-                console.error(err);
-            alert("Error al Grabar")
-            })
-        }
+        },
     },        
     created(){
         this.fetchData(this.url);
