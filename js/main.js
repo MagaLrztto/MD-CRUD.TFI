@@ -4,8 +4,7 @@ document.getElementById('header').innerHTML = `<nav class="navbar navbar-expand-
 <div class="container">
   <a class="navbar-brand" href="#"></a>
   <a href="index.html"><img src="./img/Logo2.png" style="cursor:pointer" alt="MD Logo"></a>
-  <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-    aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavId">
