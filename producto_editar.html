@@ -18,10 +18,8 @@
   <main>
     <div class="container" id="app">
       <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-        <h2>Editar Producto </h2>
-        <p>Precio:{{precio}}</p>
+        <h2 style="text-align:center">Editar Producto</h2>
         <div class="mb-3">
-          <label for="id">Id</label>
           <input type="number" name="id" id="id" disabled v-model="id" >
         </div>
         <div class="mb-3">
@@ -41,7 +39,7 @@
           <input type="text" name="imagen" id="imagen" v-model="imagen">
           <img width="100" :src="imagen" alt="">
       </div>
-      <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
+      <button type="button" class="btn btn-success" v-on:click="modificar()">Modificar</button>
       </form>
     </div>
    

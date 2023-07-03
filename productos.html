@@ -55,7 +55,7 @@
               <td><img :src="p.imagen" :alt="p.nombre" width="80" height="80"></td>
               <!-- los : permiten q se escriba directo el vue sin llaves para esos atributos-->
               <td>
-                <a class="btn btn-primary" href="producto_editar.html">Modificar</a>
+                <a class="btn btn-primary" :href="'producto_editar.html?id='+p.id +'&nombre='+p.nombre+'&precio='+p.precio+'&stock='+p.stock+'&imagen='+p.imagen">Modificar</a>
                 <!-- primary color azul -->
                 <button type="button" class="btn btn-danger" v-on:click="borrar(p.id)">Borrar</button>
                 <!-- danger color rojo -->
