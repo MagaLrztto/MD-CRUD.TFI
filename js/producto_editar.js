@@ -1,10 +1,10 @@
-console.log(location.search)
+// console.log(location.search)
 
 let argsUrl = location.search.substring(1).split('&');
-    console.log(argsUrl)
+console.log(argsUrl)
 
 let data = [];
-for(let i = 0; i< argsUrl.length; i++) {
+for(let i = 0; i < argsUrl.length; i++){
     data[i] = argsUrl[i].split('=');
 }
 
@@ -36,12 +36,12 @@ function modificar(){
         body: JSON.stringify(producto),
         method: 'PUT',
         headers: {'Content-Type': 'application/json'},
-    }
+    };
         
     fetch(url, options)
-        .then(function () {
-            alert("Registro modificado exitosamente")
-            window.location.href = "./productos.html";
+        .then(function(){
+        alert("Registro modificado exitosamente")
+        window.location.href = "./productos.html";
     })
     
     .catch(err => {

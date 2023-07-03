@@ -9,7 +9,7 @@ function guardar(){
         precio: p,
         stock: s,
         imagen: i
-    }
+    };
 
     let url = 'https://magalrztto.pythonanywhere.com/productos';
     
@@ -17,16 +17,16 @@ function guardar(){
         body: JSON.stringify(producto),
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-    }
+    };
         
     fetch(url, options)
-        .then(function () {
-            alert("Registro guardado exitosamente")
-            window.location.href = "./productos.html";
+        .then(function(){
+        alert("Registro guardado exitosamente");
+        window.location.href = "./productos.html";
     })
     
     .catch(err => {
-        alert("No pudo guardarse el nuevo producto")
+        alert("No pudo guardarse el nuevo producto");
         console.error(err);
     })
 }
