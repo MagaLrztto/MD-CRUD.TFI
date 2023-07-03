@@ -18,7 +18,7 @@
   <main>
     <div class="container">
        <form  style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-        <h1>Alta de Producto</h1>
+        <h1 style="text-align: center;">Alta de Producto</h1>
         <div class="mb-3">
           <label for="nombre">Nombre</label>
           <input type="text" name="nombre" id="nombre">
@@ -36,7 +36,7 @@
           <input type="text" name="imagen" id="imagen">
         </div>
        
-          <button type="button" class="btn btn-success" v-on click>Grabar</button>
+          <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>
       </form>
     </div>
   </main>
